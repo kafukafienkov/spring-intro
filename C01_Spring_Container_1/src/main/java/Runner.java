@@ -9,5 +9,8 @@ public class Runner {
 
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("context.xml");
+
+        Triangle triangle = (Triangle) context.getBean("triangle");
+        triangle.draw();
     }
 }
