@@ -9,8 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
-        <module>C01_Spring_Container_1</module>
-        <module>C02_Spring_Container_2</module>
+        <module>C01_Spring_Object_Init_Setter_Constructor</module>
+        <module>C02_Spring_Object_Injection</module>
+        <module>C03_Spring_InnerBeans_Aliases</module>
     </modules>
 
     <properties>
