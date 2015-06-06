@@ -17,6 +17,7 @@
         <module>C06_Spring_Using_ApplicationContextAware</module>
         <module>C07_Spring_Bean_Definition_Inheritance</module>
         <module>C08_Spring_Lifecycle_Callbacks</module>
+        <module>C09_Spring_BeasPostPRocessor</module>
     </modules>
 
     <properties>
