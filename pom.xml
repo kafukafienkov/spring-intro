@@ -12,6 +12,8 @@
         <module>C01_Spring_Object_Init_Setter_Constructor</module>
         <module>C02_Spring_Object_Injection</module>
         <module>C03_Spring_InnerBeans_Aliases</module>
+        <module>C04_Spring_Initializing_Collections</module>
+        <module>C05_Spring_Bean_Autowiring</module>
     </modules>
 
     <properties>
