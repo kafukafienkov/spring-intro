@@ -19,6 +19,7 @@
         <module>C08_Spring_Lifecycle_Callbacks</module>
         <module>C09_Spring_BeanPostProcessor</module>
         <module>C10_Spring_BeanFactoryPostProcessor</module>
+        <module>C11_Spring_Coding_To_Interfaces</module>
     </modules>
 
     <properties>
