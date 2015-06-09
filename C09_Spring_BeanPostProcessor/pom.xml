@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>C09_Spring_BeasPostPRocessor</artifactId>
+    <artifactId>C09_Spring_BeanPostProcessor</artifactId>
 
 
 </project>
