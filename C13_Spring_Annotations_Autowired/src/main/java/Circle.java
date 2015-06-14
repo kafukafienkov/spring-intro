@@ -1,10 +1,10 @@
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 /**
  * author: Bartek
  */
 public class Circle implements Shape {
-
 
     private Point centre;
 
@@ -13,6 +13,7 @@ public class Circle implements Shape {
     }
 
     @Autowired
+    @Qualifier("circleRelated")         //with @Qualifier we let Spring find bean by its <qualifier> tag
     public void setCentre(Point centre) {
         this.centre = centre;
     }
