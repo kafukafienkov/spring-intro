@@ -1,3 +1,5 @@
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
 
 /**
@@ -20,5 +22,15 @@ public class Circle implements Shape {
     public void draw() {
         System.out.println("Drawing a circle ...");
         System.out.println("Circle point is: " + centre.getX() + " " + centre.getY());
+    }
+
+    @PostConstruct                  // initialized when the bean is about to initialize
+    public void initializeCircle() {
+        System.out.println("Init of the circle ...");
+    }
+
+    @PreDestroy                     // initialized when the bean is about to be destroyed
+    public void destroyCircle() {
+        System.out.println("Destruction of the circle ...");
     }
 }
