@@ -22,6 +22,7 @@
         <module>C11_Spring_Coding_To_Interfaces</module>
         <module>C12_Spring_Annotations_and_RequiredAnnotation</module>
         <module>C13_Spring_Annotations_Autowired</module>
+        <module>C14_Spring_Annotations_JSR-250</module>
     </modules>
 
     <properties>
