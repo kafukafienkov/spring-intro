@@ -23,6 +23,7 @@
         <module>C12_Spring_Annotations_and_RequiredAnnotation</module>
         <module>C13_Spring_Annotations_Autowired</module>
         <module>C14_Spring_Annotations_JSR-250</module>
+        <module>C15_Spring_Annotations_Component_Stereotyp</module>
     </modules>
 
     <properties>
