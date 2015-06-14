@@ -11,7 +11,7 @@ public class Circle implements Shape {
         return centre;
     }
 
-    @Resource(name = "pointB")         // again Spring is looking for a bean with mentioned name pointB
+    @Resource        // now Spring is looking for a bean having same name as member variable - centre
     public void setCentre(Point centre) {
         this.centre = centre;
     }

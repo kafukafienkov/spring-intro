@@ -15,7 +15,7 @@
     <!--<property name="pointC" ref="pointC"/>-->
     <!--</bean>-->
 
-    <bean id="pointA" class="Point">
+    <bean id="centre" class="Point">
         <property name="x" value="0"/>
         <property name="y" value="0"/>
     </bean>
