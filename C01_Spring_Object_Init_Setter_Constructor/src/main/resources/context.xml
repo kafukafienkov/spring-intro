@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--<bean id="triangle" class="Triangle">-->
+    <!--<bean id="triangle" class="pl.bmroz.springIntro.shape.pl.bmroz.springIntro.shape.Triangle">-->
     <!-- &lt;!&ndash; <property name="type" value="Equilateral" />   ### initialization of am object by setter&ndash;&gt;-->
     <!--<constructor-arg value="Equilateral"/>    &lt;!&ndash; initialization using constructor &ndash;&gt;-->
     <!--<constructor-arg value="28"/>               &lt;!&ndash; initialization using constructor &ndash;&gt;-->

@@ -3,7 +3,8 @@
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="triangle" class="Triangle" init-method="myInit" destroy-method="cleanUp">
+    <bean id="triangle" class="Triangle" init-method="myInit"
+          destroy-method="cleanUp">
         <property name="pointA" ref="pointA"/>
         <property name="pointB" ref="pointB"/>
         <property name="pointC" ref="pointC"/>

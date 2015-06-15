@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="triangle" class="Triangle">
@@ -29,6 +29,6 @@
 
     <alias name="triangle" alias="triangle-alias"/>
     <!-- another way of referring to a bean,
-       using 'triangle-alias' in the Runner still refers to 'triangle' bean from line 6 above -->
+       using 'triangle-alias' in the pl.bmroz.springIntro.pl.bmroz.springIntro.Runner still refers to 'triangle' bean from line 6 above -->
 
 </beans>
