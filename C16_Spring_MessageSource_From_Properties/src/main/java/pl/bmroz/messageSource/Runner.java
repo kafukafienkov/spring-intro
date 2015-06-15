@@ -18,6 +18,5 @@ public class Runner {
         shape.draw();
         String message = context.getMessage("greeting", null, "Default message to be displayed", null);
         System.out.println("Message from the bean is: " + message);
-
     }
 }

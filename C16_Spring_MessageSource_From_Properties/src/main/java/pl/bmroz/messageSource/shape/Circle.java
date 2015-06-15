@@ -1,5 +1,7 @@
 package pl.bmroz.messageSource.shape;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -10,18 +12,22 @@ import javax.annotation.Resource;
  * author: Bartek
  */
 
-@Component              // this tells Spring that this class is a bean, it is equal to declaration of a bean in XML
-// but all the beans of this class will have only one behavior not as in case of previous
-// XML file where bean had 3 different - pointA B and C
+@Component
 public class Circle implements Shape {
 
     private Point centre;
+    @Autowired
+    private MessageSource messageSource;
+
+    public void setMessageSource(MessageSource messageSource) {
+        this.messageSource = messageSource;
+    }
 
     public Point getCentre() {
         return centre;
     }
 
-    @Resource        // now Spring is looking for a bean having same name as member variable - centre
+    @Resource
     public void setCentre(Point centre) {
         this.centre = centre;
     }
@@ -30,6 +36,8 @@ public class Circle implements Shape {
     public void draw() {
         System.out.println("Drawing a circle ...");
         System.out.println("Circle point is: " + centre.getX() + " " + centre.getY());
+        System.out.println("Message from the Circle class is: " + this.messageSource.getMessage // now we can get the message in the class
+                ("greeting", null, "Default greeting from Circle", null));           // as well as it also has access to messageSource
     }
 
     @PostConstruct                  // initialized when the bean is about to initialize
