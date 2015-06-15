@@ -16,7 +16,5 @@ public class Runner {
         context.registerShutdownHook();     //only for desktop apps
         Shape shape = (Shape) context.getBean("circle");
         shape.draw();
-        String message = context.getMessage("greeting", null, "Default message to be displayed", null);
-        System.out.println("Message from the bean is: " + message);
     }
 }
