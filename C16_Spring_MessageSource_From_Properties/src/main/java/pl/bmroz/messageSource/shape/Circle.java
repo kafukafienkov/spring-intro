@@ -35,9 +35,10 @@ public class Circle implements Shape {
     @Override
     public void draw() {
         System.out.println("####" + this.messageSource.getMessage("drawing.circle", null, "drawing.circle", null));
-        System.out.println("Circle point is: " + centre.getX() + " " + centre.getY());
-        System.out.println("Message from the Circle class is: " + this.messageSource.getMessage // now we can get the message in the class
-                ("greeting", null, "Default greeting from Circle", null));           // as well as it also has access to messageSource
+        System.out.println("@@@@" + this.messageSource.getMessage("drawing.point",      // now we are getting a message with 2 values
+                new Object[]{centre.getX(), centre.getY()}, "drawing.point", null));   // so we create an object to hold them
+//        System.out.println("Message from the Circle class is: " + this.messageSource.getMessage // now we can get the message in the class
+//                ("greeting", null, "Default greeting from Circle", null));           // as well as it also has access to messageSource
     }
 
     @PostConstruct                  // initialized when the bean is about to initialize
