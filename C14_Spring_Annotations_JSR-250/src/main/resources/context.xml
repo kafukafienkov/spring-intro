@@ -9,36 +9,36 @@
 
     <context:annotation-config/>
 
-    <!--<bean id="triangle" class="Triangle">-->
+    <!--<bean id="triangle" class="pl.bmroz.springIntro.shape.pl.bmroz.springIntro.shape.Triangle">-->
     <!--<property name="pointA" ref="pointA"/>-->
     <!--<property name="pointB" ref="pointB"/>-->
     <!--<property name="pointC" ref="pointC"/>-->
     <!--</bean>-->
 
-    <bean id="centre" class="Point">
+    <bean id="centre" class="pl.bmroz.springIntro.shape.Point">
         <property name="x" value="0"/>
         <property name="y" value="0"/>
     </bean>
 
-    <bean id="pointB" class="Point">
+    <bean id="pointB" class="pl.bmroz.springIntro.shape.Point">
         <property name="x" value="-20"/>
         <property name="y" value="0"/>
     </bean>
 
 
-    <bean id="pointC" class="Point">
+    <bean id="pointC" class="pl.bmroz.springIntro.shape.Point">
         <qualifier value="circleRelated"/>
         <property name="x" value="20"/>
         <property name="y" value="0"/>
     </bean>
 
-    <bean id="circle" class="Circle">
+    <bean id="circle" class="pl.bmroz.springIntro.shape.Circle">
         <!-- with @Autowired annotation Spring auto finds available bean with values but only if there is
         one such bean available -->
     </bean>
 
-    <!--<bean id="centre" class="Point">  &lt;!&ndash; but if we id the bean we want to be injected after the field-->
-    <!--from the class (here centre from Circle class) Spring again finds-->
+    <!--<bean id="centre" class="pl.bmroz.springIntro.shape.pl.bmroz.springIntro.shape.Point">  &lt;!&ndash; but if we id the bean we want to be injected after the field-->
+    <!--from the class (here centre from pl.bmroz.springIntro.shape.pl.bmroz.springIntro.shape.Circle class) Spring again finds-->
     <!--the correct bean &ndash;&gt;-->
     <!--<property name="x" value="150"/>-->
     <!--<property name="y" value="150"/>-->
