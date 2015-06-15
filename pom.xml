@@ -25,6 +25,7 @@
         <module>C14_Spring_Annotations_JSR-250</module>
         <module>C15_Spring_Annotations_Component_Stereotype</module>
         <module>C16_Spring_MessageSource_From_Properties</module>
+        <module>C17_Spring_Event_Handling</module>
     </modules>
 
     <properties>
