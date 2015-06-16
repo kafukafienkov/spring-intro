@@ -8,12 +8,7 @@
     http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <context:annotation-config/>
-
-    <!--<bean id="triangle" class="pl.bmroz.springIntro.shape.pl.bmroz.springIntro.shape.Triangle">-->
-    <!--<property name="pointA" ref="pointA"/>-->
-    <!--<property name="pointB" ref="pointB"/>-->
-    <!--<property name="pointC" ref="pointC"/>-->
-    <!--</bean>-->
+    <context:component-scan base-package="pl.bmroz.eventHandling.shape"/>
 
     <bean id="centre" class="pl.bmroz.eventHandling.shape.Point">
         <property name="x" value="0"/>
@@ -41,16 +36,5 @@
         </property>
     </bean>
 
-    <context:component-scan base-package="pl.bmroz.eventHandling.shape"/>
-
-    <!--<bean id="centre" class="pl.bmroz.springIntro.shape.pl.bmroz.springIntro.shape.Point">  &lt;!&ndash; but if we id the bean we want to be injected after the field-->
-    <!--from the class (here centre from pl.bmroz.springIntro.shape.pl.bmroz.springIntro.shape.Circle class) Spring again finds-->
-    <!--the correct bean &ndash;&gt;-->
-    <!--<property name="x" value="150"/>-->
-    <!--<property name="y" value="150"/>-->
-    <!--</bean>-->
-
-    <!--<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>-->
-    <!--<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>-->
 </beans>
 

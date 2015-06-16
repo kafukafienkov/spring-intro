@@ -13,7 +13,7 @@ public class Runner {
 
         AbstractApplicationContext context =
                 new ClassPathXmlApplicationContext("context.xml");
-        context.registerShutdownHook();     //only for desktop apps
+//        context.registerShutdownHook();     //only for desktop apps
         Shape shape = (Shape) context.getBean("circle");
         shape.draw();
     }
