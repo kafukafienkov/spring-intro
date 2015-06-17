@@ -5,8 +5,9 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Component;
-import pl.bmroz.eventHandling.events.DrawEvent;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
 
 /**
@@ -28,7 +29,6 @@ public class Circle implements Shape, ApplicationEventPublisherAware {
                 new Object[]{centre.getX(), centre.getY()}, "Default message", null));   // so we create an object to hold them
         DrawEvent drawEvent = new DrawEvent(this);
         publisher.publishEvent(drawEvent);
-        //TODO publisher not printing info about event
     }
 
     @Override
@@ -47,5 +47,15 @@ public class Circle implements Shape, ApplicationEventPublisherAware {
     @Resource
     public void setCentre(Point centre) {
         this.centre = centre;
+    }
+
+    @PostConstruct
+    public void postConstruct() {
+        System.out.println("1, 2, 3 ... object successfully created ...");
+    }
+
+    @PreDestroy
+    public void preDestroy() {
+        System.out.println("3, 2, 1 .... object successfully destroyed ....");
     }
 }

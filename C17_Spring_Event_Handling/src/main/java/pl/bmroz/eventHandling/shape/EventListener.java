@@ -1,4 +1,4 @@
-package pl.bmroz.eventHandling.events;
+package pl.bmroz.eventHandling.shape;
 
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
